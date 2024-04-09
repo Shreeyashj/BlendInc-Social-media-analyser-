@@ -1,0 +1,33 @@
+/* Styles for aligning buttons at the bottom center */
+.container {
+    position: relative; /* Set container to relative position */
+}
+
+.buttons-container {
+    position: absolute; /* Position buttons absolutely inside the container */
+    left: 50%; /* Align buttons to the center horizontally */
+    bottom: 20px; /* Adjust the distance from the bottom as needed */
+    transform: translateX(-50%); /* Center buttons precisely */
+}
+
+.buttons-container button {
+    margin: 0 10px; /* Add margin between the buttons */
+}
+body{
+    background: url("im/Savin-NY-Website-Background-Web.jpg");
+  
+}
+#ram{
+    padding-top: 50px;
+    color: rgb(255, 0, 0);
+    font-size: larger;
+    font-weight: bolder;
+}
+#ram2{
+    color: rgb(67, 42, 165);
+    font-weight: bold;
+}
+#ram3{
+    color: brown;
+    font-weight: bolder;
+}

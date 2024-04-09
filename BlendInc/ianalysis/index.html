@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Likes Analysis</title>
+    <style>
+        body {
+            background-image: url("1.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+    <script src="https://cdn.jsdelivr.net/npm/@streamlit/manager"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@streamlit/elements"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@streamlit/vue"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@streamlit/streamlit-component-lib"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@streamlit/vega_lite"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@streamlit/vega_lite_renderer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@streamlit/highcharts"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@streamlit/plotly"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@streamlit/react-select"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@streamlit/file-uploader"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@streamlit/time-input"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@streamlit/number-input"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@streamlit/slider"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@streamlit/code-editor"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@streamlit/streamlit-component-template"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@streamlit/markdown"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@streamlit/progress"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@streamlit/iframe"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@streamlit/state"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@streamlit/multi-file-uploader"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@streamlit/streamlit-components"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@streamlit/caching"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@streamlit/streamlit-library"></script>
+    <script>
+        window.addEventListener("DOMContentLoaded", (event) => {
+            const manager = new window.streamlit.Manager()
+            const root = document.getElementById("root")
+            manager.setComponentRoot(root)
+            window.addEventListener("message", (event) => {
+                manager.handleMessage(event.data)
+            })
+        })
+    </script>
+</body>
+</html>
